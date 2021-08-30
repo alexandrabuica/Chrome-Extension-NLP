@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Sentiment check</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="filter">
+    <div class="form-check form-switch" id="f1">
+      <input class="form-check-input" type="checkbox" id="tog1" />
+      <label class="form-check-label" for="tog1">Știri pozitive</label>
+    </div>
+    <div class="form-check form-switch" id="f2">
+      <input class="form-check-input" type="checkbox" id="tog2" />
+      <label class="form-check-label" for="tog2">Știri negative</label>
+    </div>
+  </div>
+  <div class="mainContainer">
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div>
+          <h1 class="display-4" id="jmb0">Rămâi informat<img id="icon" src="lightbulb.png"></h1>
+        </div><br>
+        <p class="lead" id="jmb">Accesează un articol! Vrei să știi mai multe? Îți voi da recomandările potrivite.</p>
+        <div id="d2"><button id="btnrecomm" type="button" class="btn btn-outline-secondary">Găsește recomandări</button>
+        </div>
+        <p class="lead" id="none"></p>
+      </div>
+    </div>
+    <div id="d1">
+      <div id="loading1" class="spinner-border" style="width: 50px; height: 50px;" role="status"></div>
+    </div>
+
+    <div id="ctr" class="container-fluid"></div>
+</body>
+
+</html>

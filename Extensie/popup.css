@@ -1,0 +1,79 @@
+body{ 
+    width: 400px;
+    height: 280px;
+    font-size: small;  
+}
+
+.container-fluid{ 
+    display: none;
+    margin-top: -10px;
+} 
+
+.mainContainer{
+    margin: 10px;
+    margin-top: 0px;
+}
+ 
+#jmb, #jmb0{
+  margin-top: 10px;
+  display:flex;
+}
+
+#btnrecomm{
+  margin-top: 10px;
+  color: gray;
+  border-color: gray;
+  
+}
+
+#btnrecomm:hover{
+  color:white;
+  background-color: gray;
+}
+
+#d2{
+  text-align: center;
+}
+
+#btnrecomm{
+  width: 200px;
+}
+
+#loading1{
+  color: gray;
+  margin-top: 50px;
+}
+
+#d1{
+  display: block;
+  margin-left: 45%; 
+}
+
+#icon{
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+} 
+
+h1{
+  display: inline;
+}  
+
+#filter input {
+  vertical-align: middle; 
+}
+
+#filter label {
+  display: inline-block;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+#f1, #f2{
+  margin: auto;
+}
+
+#filter{
+  margin-top: 18px;
+}
+ 

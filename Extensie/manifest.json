@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": " Mecanism de recomandare pentru știri",
+    "description": "Recomandare și clasificare de știri prin analiză de sentimente",
+    "version": "1.0",
+    "author": "Elena-Alexandra Buica",
+    "icons": { 
+        "16": "newspaper.png",
+        "32": "newspaper.png",
+        "48": "newspaper.png",
+        "128": "newspaper.png"
+    },
+    "page_action": {
+        "default_title": "Mecanism de recomandare pentru știri",
+        "default_popup": "popup.html",
+        "default_icon": "newspaper.png"  
+    },
+    "content_scripts": [
+        {
+            "matches": [ 
+                "https://www.libertatea.ro/*", 
+                "https://adevarul.ro/*",
+                "https://romanialibera.ro/*",
+                "https://www.gandul.ro/*",
+                "https://jurnalul.ro/*"
+            ],
+            "js": [
+                "content.js",
+                "jquery-3.3.1.min.js"
+            ]
+        }
+    ],
+    "permissions": [  
+        "https://www.libertatea.ro/*", 
+        "https://adevarul.ro/*",
+        "https://romanialibera.ro/*", 
+        "https://jurnalul.ro/*",
+        "tabs"
+    ], 
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+}
